@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Vehicles - ASLcars</title>
+
+</head>
+<body>
+
+<header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a href="index.html" class="logo"> <span>ASL</span>cars </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="vehicles.html" class="active">vehicles</a>
+        <a href="services.html">services</a>
+        <a href="reviews.html">reviews</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="navbar-right search-area">
+        <div class="navbar-divider search-divider"></div>
+
+        <button type="button" id="search-btn" class="search-toggle-btn" aria-label="Open search" aria-expanded="false">
+            <i class="fas fa-search"></i>
+        </button>
+
+        <form class="search-box" action="" role="search">
+            <input type="search" placeholder="Search vehicles..." aria-label="Search vehicles">
+            <button type="submit" aria-label="Search vehicles"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+</header> 
+
+<div class="container vehicle-carousel-shell">
+
+  <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="image/carousel-1.jpg" class="d-block w-100" alt="Vehicle 1">
+        <div class="carousel-caption d-block">
+          <h5>Caladelac Escalade</h5>
+          <p>Full-size luxury SUV with seating for up to seven, magnetic ride control, V8 power and a high-end leather interior - ideal for comfort and presence on long journeys.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="image/carousel-2.jpg" class="d-block w-100" alt="Vehicle 2">
+        <div class="carousel-caption d-block">
+          <h5>Mercedes G63 Amg</h5>
+          <p>Iconic off-road capable SUV tuned by Brabus — handcrafted V8 performance, aggressive styling and full suite of driver aids for both city and rough-terrain driving.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="image/carousel-3.jpg" class="d-block w-100" alt="Vehicle 3">
+        <div class="carousel-caption d-block">
+          <h5>Lamboghini Urus</h5>
+          <p>Super-SUV delivering supercar performance: twin-turbo V8, razor-sharp handling and dramatic Italian design - performance without sacrificing daily usability.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="image/carousel-4.jpg" class="d-block w-100" alt="Vehicle 4">
+        <div class="carousel-caption d-block">
+          <h5>BMW X6</h5>
+          <p>Sporty SUV combining dynamic driving character with practical interior space, available adaptive suspension and a range of powerful engines.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/carousel-5.jpg" class="d-block w-100" alt="Vehicle 5">
+        <div class="carousel-caption d-block">
+          <h5>Range Rover</h5>
+          <p>Elegant luxury SUV offering refined comfort, advanced safety and infotainment features plus a selection of responsive engines for an engaging drive.</p>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+
+
+<section class="featured" id="featured">
+    <h1 class="heading"> <span>featured</span> cars </h1>
+
+    <div class="cards">
+        <article class="card">
+            <div class="card-media">
+                <img src="image/car-1.png" alt="AUDI RS7">
+            </div>
+            <div class="card-body">
+                <div class="card-brand">AUDI</div>
+                <h3 class="card-title">RS7</h3>
+                <div class="card-variant">Sedan</div>
+
+                <ul class="card-meta">
+                    <li><i class="fas fa-user-friends"></i> 5 seats</li>
+                    <li><i class="fas fa-gas-pump"></i> Petrol / Hybrid</li>
+                </ul>
+
+                <div class="card-price">New from £112,185</div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-media">
+                <img src="image/car-2.png" alt="Honda Civic Type R">
+            </div>
+            <div class="card-body">
+                <div class="card-brand">Honda</div>
+                <h3 class="card-title">Civic Type R</h3>
+                <div class="card-variant">Hatchback</div>
+
+                <ul class="card-meta">
+                    <li><i class="fas fa-user-friends"></i> 5 seats</li>
+                    <li><i class="fas fa-gas-pump"></i> Petrol / Diesel</li>
+                </ul>
+
+                <div class="card-price">New from £69,280</div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-media">
+                <img src="image/car-3.png" alt="Nissan GTR">
+            </div>
+            <div class="card-body">
+                <div class="card-brand">Nissan</div>
+                <h3 class="card-title">GTR</h3>
+                <div class="card-variant">Sports Car</div>
+
+                <ul class="card-meta">
+                    <li><i class="fas fa-user-friends"></i> 2 seats</li>
+                    <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                </ul>
+
+                <div class="card-price">New from £83,595</div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-media">
+                <img src="image/car-4.png" alt="Bentley Bentayga">
+            </div>
+            <div class="card-body">
+                <div class="card-brand">Bentley</div>
+                <h3 class="card-title">Bentayga</h3>
+                <div class="card-variant">SUV</div>
+
+                <ul class="card-meta">
+                    <li><i class="fas fa-user-friends"></i> 5 seats</li>
+                    <li><i class="fas fa-gas-pump"></i> Petrol / Diesel</li>
+                </ul>
+
+                <div class="card-price">New from £160,500</div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-media">
+                <img src="image/car-5.png" alt="Porsche Taycan">
+            </div>
+            <div class="card-body">
+                <div class="card-brand">Porsche</div>
+                <h3 class="card-title">Taycan</h3>
+                <div class="card-variant">Sedan</div>
+
+                <ul class="card-meta">
+                    <li><i class="fas fa-user-friends"></i> 4 seats</li>
+                    <li><i class="fas fa-gas-pump"></i> Electric</li>
+                </ul>
+
+                <div class="card-price">New from £90,000</div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-media">
+                <img src="image/car-6.png" alt="Mercedes Benz C63 AMG">
+            </div>
+            <div class="card-body">
+                <div class="card-brand">Mercedes Benz</div>
+                <h3 class="card-title">C63 AMG</h3>
+                <div class="card-variant">Sedan</div>
+
+                <ul class="card-meta">
+                    <li><i class="fas fa-user-friends"></i> 4 seats</li>
+                    <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                </ul>
+
+                <div class="card-price">New from £75,500</div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-media">
+                <img src="image/car-7.png" alt="BMW M3">
+            </div>
+            <div class="card-body">
+                <div class="card-brand">BMW</div>
+                <h3 class="card-title">M3</h3>
+                <div class="card-variant">Sedan</div>
+
+                <ul class="card-meta">
+                    <li><i class="fas fa-user-friends"></i> 5 seats</li>
+                    <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                </ul>
+
+                <div class="card-price">New from £90,500</div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-media">
+                <img src="image/car-8.png" alt="Tesla Cybertruck">
+            </div>
+            <div class="card-body">
+                <div class="card-brand">Tesla</div>
+                <h3 class="card-title">Cybertruck</h3>
+                <div class="card-variant">Pickup</div>
+
+                <ul class="card-meta">
+                    <li><i class="fas fa-user-friends"></i> 5 seats</li>
+                    <li><i class="fas fa-gas-pump"></i> Electric</li>
+                </ul>
+
+                <div class="card-price">New from £75,000</div>
+            </div>
+        </article>
+    </div>
+
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
